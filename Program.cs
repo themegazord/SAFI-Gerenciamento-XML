@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using safi_gerenciamento_xml.Infrastructure.CassandraConnection;
+
+CassandraConnection.Session();
