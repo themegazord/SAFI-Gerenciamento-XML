@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace safi_gerenciamento_xml.Domain.DTO.Cliente
+namespace safi_gerenciamento_xml.ManipulaExcel.Domain.DTO.Cliente
 {
     public class ClienteDTO
     {

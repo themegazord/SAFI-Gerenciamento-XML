@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Cassandra.Data.Linq;
 
-namespace safi_gerenciamento_xml.Domain.DTO.Contador
+namespace safi_gerenciamento_xml.ManipulaExcel.Domain.DTO.Contador
 {
     public class ContadorDTO
     {

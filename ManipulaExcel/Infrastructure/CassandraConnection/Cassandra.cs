@@ -1,6 +1,6 @@
 using Cassandra;
 
-namespace safi_gerenciamento_xml.Infrastructure.CassandraConnection
+namespace safi_gerenciamento_xml.ManipulaExcel.Infrastructure.CassandraConnection
 {
     public class CassandraConnection
     {
