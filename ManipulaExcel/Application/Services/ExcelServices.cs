@@ -1,6 +1,6 @@
 using OfficeOpenXml;
 using safi_gerenciamento_xml.ManipulaExcel.Domain.DTO.Contador;
-using safi_gerenciamento_xml.ManipulaExcel.Domain.Exceptions;
+using safi_gerenciamento_xml.ManipulaExcel.Application.Exceptions;
 
 
 namespace safi_gerenciamento_xml.ManipulaExcel.Application.Services
@@ -23,12 +23,12 @@ namespace safi_gerenciamento_xml.ManipulaExcel.Application.Services
         }
         private void VerificaSeOPathEInvalido(string path) {
             if (!Path.IsPathRooted(path)) {
-                ExcelException.PathInvalido();
+                throw new ExcelException("O caminho passado para o sistema é inválido ou não pode ser alcançado!");
             }
         }
         private void VerificaSeOArquivoNaoExiste(string path) {
             if (!File.Exists(path)) {
-                ExcelException.ArquivoInvalido();
+                throw new ExcelException("O arquivo passado é inválido ou não existe.");
             }
         }
 

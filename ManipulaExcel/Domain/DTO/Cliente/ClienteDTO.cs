@@ -8,7 +8,7 @@ namespace safi_gerenciamento_xml.ManipulaExcel.Domain.DTO.Cliente
     public class ClienteDTO
     {
         public Guid id_Cliente {get;}
-        public string? nome_Cliente {get; set;}
+        public string nome_Cliente {get; set;}
         public Guid id_Contador {get; set;}
 
         public ClienteDTO(string nomeCliente, string emailCliente, Guid idContador)

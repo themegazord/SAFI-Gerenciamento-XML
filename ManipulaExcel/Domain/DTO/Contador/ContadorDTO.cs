@@ -10,8 +10,8 @@ namespace safi_gerenciamento_xml.ManipulaExcel.Domain.DTO.Contador
     public class ContadorDTO
     {
         public Guid id_Contador {get;}
-        public string? nome_Contador {get; set;}
-        public string? email_Contador {get; set;}
+        public string nome_Contador {get; set;}
+        public string email_Contador {get; set;}
 
         public ContadorDTO(string nomeContador, string emailContador)
         {
