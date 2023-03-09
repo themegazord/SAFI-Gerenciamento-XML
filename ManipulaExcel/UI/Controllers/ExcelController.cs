@@ -9,8 +9,8 @@ namespace safi_gerenciamento_xml.ManipulaExcel.UI.Controllers
         {
             this._excel_Services = _excel_Services;
         }
-        public void Update(string path) {
-            this._excel_Services.VerificaAPossibilidadeDeDarUpdate(path);
+        public void Insert(string path) {
+            this._excel_Services.VerificaAPossibilidadeDeDarInsert(path);
         }
     }
 }
