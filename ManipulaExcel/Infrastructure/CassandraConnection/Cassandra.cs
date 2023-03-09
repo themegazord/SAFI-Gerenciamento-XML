@@ -1,15 +1,15 @@
 using Cassandra;
 
-namespace safi_gerenciamento_xml.Infrastructure.CassandraConnection
+namespace safi_gerenciamento_xml.ManipulaExcel.Infrastructure.CassandraConnection
 {
     public class CassandraConnection
     {
-        public static void Session() {
+        public static ISession Session() {
             var cluster = Cluster.Builder()
                 .AddContactPoint("127.0.0.1")
                 .Build();
 
-            var session = cluster.Connect("safi_gerenciamento_xml");
+            return cluster.Connect("safi_gerenciamento_xml");
         }
     }
 }
